@@ -20,6 +20,7 @@ const FormComponentsInput = () => {
       email,
     };
     dispatch(addLogin(finalFormResult));
+    alert("Вы успешо зарегестрировались, перейдите во вкладку Личный кабинет что бы войти")
 
     e.currentTarget.reset();
   };
@@ -27,13 +28,13 @@ const FormComponentsInput = () => {
   return (
     <form onSubmit={handleSubmitForm} className={css.formWrapper}>
       <label>Введите логин</label>
-      <input type="text" name="login"  className={css.inputForm}/>
+      <input type="text" name="login" required  className={css.inputForm}/>
       <label>Введите пароль</label>
-      <input type="text" name="password" className={css.inputForm}/>
+      <input type="text" name="password" required className={css.inputForm}/>
       <label>Введите Имя</label>
-      <input type="text" name="name" className={css.inputForm}/>
+      <input type="text" name="name"  required className={css.inputForm}/>
       <label>Введите E-mail</label>
-      <input type="text" name="email" className={css.inputForm}/>
+      <input type="text" name="email" required className={css.inputForm}/>
 
       <button type="submit" className={css.btnForm}>Log In</button>
     </form>
