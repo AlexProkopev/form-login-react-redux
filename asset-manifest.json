@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/form-login-react-redux/static/css/main.9274b0de.css",
-    "main.js": "/form-login-react-redux/static/js/main.b945e646.js",
+    "main.js": "/form-login-react-redux/static/js/main.db91b0fa.js",
     "index.html": "/form-login-react-redux/index.html",
     "main.9274b0de.css.map": "/form-login-react-redux/static/css/main.9274b0de.css.map",
-    "main.b945e646.js.map": "/form-login-react-redux/static/js/main.b945e646.js.map"
+    "main.db91b0fa.js.map": "/form-login-react-redux/static/js/main.db91b0fa.js.map"
   },
   "entrypoints": [
     "static/css/main.9274b0de.css",
-    "static/js/main.b945e646.js"
+    "static/js/main.db91b0fa.js"
   ]
 }
