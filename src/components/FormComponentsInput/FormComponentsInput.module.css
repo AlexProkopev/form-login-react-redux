@@ -1,0 +1,29 @@
+.formWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.inputForm {
+    width: 50%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.btnForm {
+    width: 50%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.btnForm:hover {
+background-color: black;
+color: white;
+}

@@ -1,0 +1,11 @@
+.logOut {
+    width: 50%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: red;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
