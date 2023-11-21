@@ -37,12 +37,14 @@ const LoginForm = () => {
         name="login"
         onChange={handleInputChange}
         className={css.inputForm}
+        required
       />
       <label htmlFor="password">Введите пароль</label>
       <input
         type="text"
         placeholder="password"
         name="password"
+        required
         onChange={handleInputChange}
         className={css.inputForm}
       />
