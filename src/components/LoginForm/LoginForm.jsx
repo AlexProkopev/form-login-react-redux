@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import css from './LoginForm.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleLogin } from 'redux/login.reducer';
+import Notiflix from 'notiflix';
+import { getLoginState } from 'redux/selectors';
 
 const LoginForm = () => {
   const [loginValue, setLoginValue] = useState('');
   const [passwordValue, setPasswordValue] = useState('');
   const dispatch = useDispatch();
-  const loginState = useSelector(state => state.loginStore.login);
+  const loginState = useSelector(getLoginState);
 
   const handleInputChange = e => {
     const { name, value } = e.target;
@@ -19,18 +21,19 @@ const LoginForm = () => {
   };
 
   const handleLogIn = () => {
-    if (loginValue !== loginState.login) return alert('Неверный логин');
-    if (passwordValue !== loginState.passwordUser) return alert('Неверный пароль');
-    alert('Вы успешно вошли в кабинет');
+    if (loginValue !== loginState.login) return alert('Invalid login');
+    if (passwordValue !== loginState.passwordUser) return alert('Invalid password');
+    alert('You have successfully logged in');
 
     dispatch(toggleLogin());
+    Notiflix.Notify.success(`Hello ${loginState.name}`)
     return
   };
 
   return (
     <form action="" className={css.formWrapper} onSubmit={handleLogIn}>
-      Войдите в личный кабинет
-      <label htmlFor="login">Введите логин</label>
+     Log in to your personal account
+      <label htmlFor="login">Enter your login</label>
       <input
         type="text"
         placeholder="login"
@@ -39,7 +42,7 @@ const LoginForm = () => {
         className={css.inputForm}
         required
       />
-      <label htmlFor="password">Введите пароль</label>
+      <label htmlFor="password">Enter your password</label>
       <input
         type="text"
         placeholder="password"
@@ -48,7 +51,7 @@ const LoginForm = () => {
         onChange={handleInputChange}
         className={css.inputForm}
       />
-      <button type="submit">Log In</button>
+      <button type="submit" className={css.btnLogIn}>Log In</button>
     </form>
   );
 };

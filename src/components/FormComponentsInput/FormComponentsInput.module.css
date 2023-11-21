@@ -1,4 +1,4 @@
-.formWrapper {
+/* .formWrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,4 +26,44 @@
 .btnForm:hover {
 background-color: black;
 color: white;
-}
+} */
+
+.btnNav:hover {
+    background-color: #2ecc71;
+    color: #fff;
+  }
+  
+  /* Стили для формы регистрации и логина */
+  .formWrapper {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  /* Стили для ввода данных в форме */
+  .inputForm {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  /* Стиль для кнопки в форме */
+  .btnForm {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Стиль для кнопки в форме при наведении */
+  .btnForm:hover {
+    background-color: #2980b9;
+  }
+  

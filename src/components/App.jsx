@@ -1,24 +1,23 @@
 import FormComponentsInput from "./FormComponentsInput/FormComponentsInput";
 import css from "./App.module.css"
-import { useSelector } from "react-redux";
 import LogIn from "./LogIn/LogIn";
-import { Link, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import Layout from "./Layout/Layout";
+// import { lazy } from "react";
 
 export const App = () => {
 
-  const loginState = useSelector(state => state.loginStore.login);
-
-
   return (
     <div className={css.App}>
-     <div className={css.wrapper}>
-     {loginState === null && <Link to="/" className={css.registrationLink}> Регистрация </Link>}
-      <Link to="/login" className={css.btnNav} >Личный кабинет</Link>
-     </div>
+     <Layout>
       <Routes>
-        <Route path="/" element={<FormComponentsInput />} />
+        <Route path="/registration" element={<FormComponentsInput />} />
         <Route path="/login/*" element={<LogIn />} />
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<Home />} />
       </Routes>
+      </Layout>
     </div>
   )
 };

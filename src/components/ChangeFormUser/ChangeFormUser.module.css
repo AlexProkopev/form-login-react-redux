@@ -1,0 +1,46 @@
+.wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+
+.formWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Стиль для каждой метки и ввода данных */
+  .label {
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  /* Стиль для кнопки в форме (если есть) */
+  .buttonChange {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Стиль для кнопки при наведении */
+  .buttonChange:hover {
+    background-color: #2980b9;
+  }
+  

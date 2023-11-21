@@ -1,4 +1,4 @@
-.container {
+/* .container {
     width: 1200px;
     margin: 0 auto;
     margin-top: 30px;
@@ -28,4 +28,13 @@
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
-}
+} */
+
+
+.App {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Общий стиль для обертки элементов */

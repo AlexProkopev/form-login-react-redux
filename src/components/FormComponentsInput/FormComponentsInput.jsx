@@ -2,6 +2,8 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { addLogin } from 'redux/login.reducer';
 import css from './FormComponentsInput.module.css';
+import { Notify } from 'notiflix';
+
 
 const FormComponentsInput = () => {
   const dispatch = useDispatch();
@@ -20,23 +22,23 @@ const FormComponentsInput = () => {
       email,
     };
     dispatch(addLogin(finalFormResult));
-    alert("Вы успешо зарегестрировались, перейдите во вкладку Личный кабинет что бы войти")
+    Notify.success("You have successfully registered, go to the Personal Account tab to log in")
 
     e.currentTarget.reset();
   };
 
   return (
     <form onSubmit={handleSubmitForm} className={css.formWrapper}>
-      <label>Введите логин</label>
+      <label htmlFor='login'>Create a username</label>
       <input type="text" name="login" required  className={css.inputForm}/>
-      <label>Введите пароль</label>
+      <label  htmlFor='password'>Create a password</label>
       <input type="text" name="password" required className={css.inputForm}/>
-      <label>Введите Имя</label>
+      <label  htmlFor='name'>Enter your name</label>
       <input type="text" name="name"  required className={css.inputForm}/>
-      <label>Введите E-mail</label>
+      <label  htmlFor='email'>Enter your E-mail</label>
       <input type="text" name="email" required className={css.inputForm}/>
 
-      <button type="submit" className={css.btnForm}>Log In</button>
+      <button type="submit" className={css.btnForm}>Registration</button>
     </form>
   );
 };

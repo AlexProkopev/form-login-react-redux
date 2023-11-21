@@ -1,0 +1,29 @@
+.wrapper {
+    margin-top: 20px;
+}
+
+
+
+.title {
+    color: #2ecc71;
+  }
+  
+
+  .btnLogOut {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+
+  .btnLogOut:hover {
+    background-color: #c0392b;
+  }

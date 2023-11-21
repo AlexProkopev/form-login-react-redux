@@ -1,0 +1,34 @@
+/* Стили для общей обертки */
+.wrapper {
+    display: flex;
+    align-items: flex-start; /* Выравнивание по верхнему краю */
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    
+    border-radius: 5px;
+  }
+  
+  /* Стили для ссылок в бургер-меню пользователя */
+  .burgerUserLink {
+    text-decoration: none;
+    color: #3498db;
+    margin-right: 10px; /* Добавлено расстояние между ссылками */
+    font-size: 1.2em;
+    transition: color 0.3s;
+  }
+  
+  /* Стили для ссылок в бургер-меню при наведении */
+  .burgerUserLink:hover {
+    color: #2980b9;
+  }
+  
+  /* Стили для заголовка "User Info" */
+  .title {
+    align-self: center;
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  

@@ -5,9 +5,10 @@ import { useSelector } from 'react-redux';
 
 import LoginForm from 'components/LoginForm/LoginForm';
 import RouteCabinet from 'components/RouteCabinet/RouteCabinet';
+import { getIsLoginState } from 'redux/selectors';
 
 const LogIn = () => {
-  const isLoading = useSelector(state => state.loginStore.isLoggedIn);
+  const isLoading = useSelector(getIsLoginState);
 
   return (
     <div>
