@@ -7,17 +7,12 @@ import UserInfo from 'components/UserInfo/UserInfo';
 
 const CabinetUser = () => {
 
-    
-    const dispatch = useDispatch();
-
-   const handleLogOut =() => {
-    dispatch(logOut())
-    }
-
+  const dispatch = useDispatch();
+ 
   return (
     <div className={css.wrapper}>
         <UserInfo/>
-<Link to="/" onClick={handleLogOut} className={css.btnLogOut}>Log Out</Link>
+<Link to="/" onClick={() = >dispatch(logOut())} className={css.btnLogOut}>Log Out</Link>
     </div>
   )
 }
